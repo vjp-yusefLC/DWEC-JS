@@ -1,2 +1,2 @@
-# DWES-JS
+# DWEC-JS
 JS + Angular
