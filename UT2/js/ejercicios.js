@@ -228,5 +228,4 @@ const Ejercicio9 = () => {
     console.log(plato1.toString() + " Ingredientes: " + ingredientesPlato1.join(", "));
     console.log(plato2.toString() + " Ingredientes: " + ingredientesPlato2.join(", "));
     console.log(plato3.toString() + " Ingredientes: " + ingredientesPlato3.join(", "));
-    //hduhsd
 }
