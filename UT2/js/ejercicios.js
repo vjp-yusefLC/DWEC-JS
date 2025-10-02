@@ -229,3 +229,21 @@ const Ejercicio9 = () => {
     console.log(plato2.toString() + " Ingredientes: " + ingredientesPlato2.join(", "));
     console.log(plato3.toString() + " Ingredientes: " + ingredientesPlato3.join(", "));
 }
+
+const Ejercicio10 = () => {
+    function funcionRest(...argumentos) {
+        if (!argumentos.every(elemento => typeof elemento === "string")) {
+            return console.log("Error.");
+        }
+        /*
+        El método reduce recorre el array 'argumentos' y va acumulando el resultado.
+        En cada paso, concatena el acumulador (acum) con el siguiente elemento (actual),
+        añadiendo entre ellos el texto ' + '. Así, si los argumentos son "a", "b", "c",
+        el resultado será "a + b + c". Pongo esto porque sino no me entero 😓
+        */
+        let total = argumentos.reduce((acum, actual) => acum + " + " + actual);
+        console.log("Resultado: " + total);
+        return total;
+    }
+    funcionRest("Hola", "mundo");
+}
