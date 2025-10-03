@@ -25,3 +25,33 @@ No devuelve un solo elemento como getElementById, sino una lista viva (se actual
 document.getElementsByTagName("p")
 document.getElementsByTagName("p") → lista de elementos con esa etiqueta.
 Funciona igual que getElementsByClassName, pero en vez de seleccionar por clase, selecciona por nombre de etiqueta (tag), como <p>, <div>, <h1>, etc.
+
+element.childNodes
+Devuelve una colección (NodeList) de todos los nodos hijos de un elemento.
+Esto incluye elementos HTML, nodos de texto, comentarios, etc.
+
+element.children
+children devuelve solo los nodos hijos que son elementos HTML.
+No incluye nodos de texto, comentarios u otros tipos de nodos.
+
+element.parentNode
+Devuelve el nodo padre inmediato de un elemento en el DOM.
+osea que Incluye cualquier tipo de nodo: texto, comentarios o elementos.
+
+element.nextSibling
+Devuelve el nodo inmediatamente siguiente al nodo actual, en el mismo nivel del árbol DOM.
+Incluye cualquier tipo de nodo: texto, comentarios o elementos.
+
+element.previousSibling
+Devuelve el nodo inmediatamente anterior al nodo actual, en el mismo nivel del árbol DOM.
+Incluye cualquier tipo de nodo: texto, comentarios o elementos.
+
+element.nextElementSibling
+devuelve el siguiente nodo hermano que sea un elemento HTML.
+Ignora nodos de texto, comentarios u otros tipos de nodo.
+Es útil cuando solo quieres moverte entre elementos visibles en el HTML, sin preocuparte por espacios en blanco o comentarios.
+
+previousElementSibling
+devuelve el elemento HTML hermano anterior al nodo actual.
+Ignora nodos de texto, comentarios u otros tipos de nodo.
+Es útil cuando quieres moverte solo entre elementos HTML, sin que los espacios en blanco o comentarios interfieran.

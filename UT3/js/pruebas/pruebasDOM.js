@@ -1,4 +1,4 @@
-// 1. Obtener el nodo raíz <html>
+/* // 1. Obtener el nodo raíz <html>
 console.log(document.documentElement);
 
 // 2. Obtener el <head>
@@ -25,4 +25,40 @@ if (titulo) {
 }
 
 // Ejemplo: Cambiar el color del primer <p>
-parrafos[0].style.color = "red";
+parrafos[0].style.color = "red"; */
+
+
+
+/* // childNodes: todos los nodos hijos
+console.log(document.getElementById("contenedor").childNodes);
+
+// children: solo elementos HTML hijos
+console.log(document.getElementById("contenedor").children);
+
+// parentNode: padre de parrafo1
+console.log(document.getElementById("parrafo1").parentNode);
+
+// nextSibling: siguiente nodo (puede ser texto o comentario)
+console.log(document.getElementById("parrafo1").nextSibling);
+
+// nextElementSibling: siguiente elemento HTML
+console.log(document.getElementById("parrafo1").nextElementSibling); */
+
+
+
+var elementosP = document.getElementsByTagName("p");
+
+// Muestro todos los elementosP que haya
+for(i = 0; i < elementosP.length - 1; i++){
+    console.log(elementosP[i]);
+}
+
+// Mientras haya elementos de clase parrafos los elimino
+while (document.getElementsByClassName("parrafos").length > 0) {
+    document.getElementsByClassName("parrafos")[0].remove();
+}
+
+// Muestro todos los elementosP que haya
+for(i = 0; i < elementosP.length - 1; i++){
+    console.log(elementosP[i]);
+}
