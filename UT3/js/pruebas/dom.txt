@@ -1,0 +1,27 @@
+document.documentElement
+document → representa todo el documento HTML cargado en la página.
+document.documentElement → devuelve el nodo raíz del documento, que siempre es el <html>.
+(incluye <head> + <body>)
+
+Ej: console.log(document.documentElement); 
+    // <html lang="es"> ... </html>
+
+
+document.head
+document.head → te da el <head> (metadatos, estilos, scripts).
+
+document.body
+document.body → te da el <body> (contenido visible).
+
+document.getElementById("id")
+Devuelve la referencia al elemento del DOM que tiene ese id.
+Si no existe, devuelve null.
+Es la forma mas directa de obtener un elemento unico.
+
+document.getElementsByClassName("class")
+document.getElementsByClassName("class") → lista de elementos con esa clase.
+No devuelve un solo elemento como getElementById, sino una lista viva (se actualiza si cambian los elementos del DOM).
+
+document.getElementsByTagName("p")
+document.getElementsByTagName("p") → lista de elementos con esa etiqueta.
+Funciona igual que getElementsByClassName, pero en vez de seleccionar por clase, selecciona por nombre de etiqueta (tag), como <p>, <div>, <h1>, etc.
