@@ -55,3 +55,4 @@ previousElementSibling
 devuelve el elemento HTML hermano anterior al nodo actual.
 Ignora nodos de texto, comentarios u otros tipos de nodo.
 Es útil cuando quieres moverte solo entre elementos HTML, sin que los espacios en blanco o comentarios interfieran.
+
